@@ -1,5 +1,6 @@
 # Syft App
 
+![alt text](https://github.com/shaon007/Syftapp_kotlin_mvvm/blob/master/app/src/main/res/drawable/screenshot_syftapp.JPG)
 
 
 ## Getting Started

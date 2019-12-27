@@ -11,12 +11,12 @@ The results are sorted by the order of their star rating from high to low. The r
 
 ## Technologies implemented
 
-•	Kotlin - This is my second implementation in Kotlin. I am still in the process of learning the language as I want to cross over to Kotlin entirely for Android development.
-•	MVVM pattern
-•	Dagger 2
-•	Retrofit
-•	Infinite scrolling mechanism
-•	Unit test, mockito
+*	Kotlin - This is my second implementation in Kotlin. I am still in the process of learning the language as I want to cross over to Kotlin entirely for Android development.
+*	MVVM pattern
+*	Dagger 2
+*	Retrofit
+*	Infinite scrolling mechanism
+*	Unit test, mockito
 
 ## Development brief
 
@@ -37,11 +37,11 @@ As this is the search app, I focused my tests on making sure search entries don�
 
 I have used unit testing with Mockito. Here is a breakdown of the tests I have written so far:
 
-•	If no character or whitespace is entered in search then the api call result isn’t observed
-•	If no character or whitespace is entered in search then the method for api call isn’t called
-•	If success result is turned from api call then the result can be observed with LiveData
-•	If any text is entered in  search box then correct method is being called 
-•	If somehow empty search query is submitted for api calls then it throws exception
+*	If no character or whitespace is entered in search then the api call result isn’t observed
+*	If no character or whitespace is entered in search then the method for api call isn’t called
+*	If success result is turned from api call then the result can be observed with LiveData
+*	If any text is entered in  search box then correct method is being called 
+*	If somehow empty search query is submitted for api calls then it throws exception
 
 
 

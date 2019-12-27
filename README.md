@@ -22,9 +22,12 @@ The results are sorted by the order of their star rating from high to low. The r
 
 In order to search git repositories whenever user types anything in searchbox, I needed to make api call every time a character is entered and cancel the previous api calls made already.
 
-First attempt was to use RxJava for api calls and dispose previous results but it was making all the api calls for each search character entered and fetching random results.
+First attempt I used RxJava,  but that made a sperate API call for each of the characters entered in the search field and showed random results due to being observed as live data, this accumulated as a list of results at the end with several search results.
 
-I used switchMap with LiveData as parameter instead. Now as text is changed in search box,  switchMap acts only on that latest text. But then again there was a problem of the API for calling it too fast every time a character was entered, so I delayed each api call for 2 seconds.
+Using switchMap with LiveData as a parameter instead has been more useful, this method effectively cancels an API call by only returning  the result for the most recent submitted API call.
+
+I introduced a two second delay in which I wait to collect all the typed characters within 2 seconds before the API request. The timing starts from the first character typed. This allows a person to enter multiple characters in between and retrieve one set of result that is much more relevant. 
+
 
 I wanted to filter from just the search results but couldn’t find the fields to filter on. So I had to make new api calls to filter by topic and language. If I could have stored the result in local database then it would have been faster to run the filter.
 

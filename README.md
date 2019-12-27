@@ -1,49 +1,35 @@
-# Syft App
+# Syft Git Search App
 
 ![alt text](https://github.com/shaon007/Syftapp_kotlin_mvvm/blob/master/app/src/main/res/drawable/screenshot_syftapp.JPG)
 
+The app generates search results in the form of a list as the user types in text into the search field. 
 
-## Getting Started
+There is an additional filter function next to the search box, this opens a dialog with the options to filter results by topic and language categories.
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+A total count of the search result is shown below the search field.
 
-### Prerequisites
+The results are sorted by the order of their star rating from high to low. The results display git name, language followed by a truncated description. 
 
-What things you need to install the software and how to install them
 
-```
-Give examples
-```
+## Technologies implemented
 
-### Installing
+* Kotlin - This is my second app in Kotlin. I am still in the process of learning as I want to cross over to Kotlin entirely for Android development.
+* MVVM pattern
+* Dagger 2
+* Retrofit
+* Infinite scrolling mechanism
+* Unit test, mockito
 
-A step by step series of examples that tell you how to get a development env running
+•	Kotlin - This is my second app in Kotlin. I am still in the process of learning as I want to cross over to Kotlin entirely for andorid development.
+o	This is test
 
-Say what the step will be
 
-```
-Give the example
-```
 
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
 
 ## Running the tests
 
 Explain how to run the automated tests for this system
 
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
 
 ### And coding style tests
 

@@ -7,7 +7,8 @@ There is an additional filter function next to the search box, this opens a dial
 
 A total count of the search result is shown below the search field.
 
-The results are sorted by the order of their star rating from high to low. The results display git name, language followed by a truncated description.
+The results are sorted by the order of their star rating from high to low. The results display git name, language followed by a truncated description. On click, they open the git repository in web view. 
+
 
 ## Technologies implemented
 
@@ -18,6 +19,7 @@ The results are sorted by the order of their star rating from high to low. The r
 *	Infinite scrolling mechanism
 *	Unit test, mockito
 
+
 ## Development brief
 
 In order to search git repositories whenever user types anything in searchbox, I needed to make api call every time a character is entered and cancel the previous api calls made already.
@@ -26,12 +28,11 @@ First attempt I used RxJava,  but that made a sperate API call for each of the c
 
 Using switchMap with LiveData as a parameter instead has been more useful, this method effectively cancels an API call by only returning  the result for the most recent submitted API call.
 
-I introduced a two second delay in which I wait to collect all the typed characters within 2 seconds before the API request. The timing starts from the first character typed. This allows a person to enter multiple characters in between and retrieve one set of result that is much more relevant. 
-
+I introduced a two second delay before each API request. The timing starts from the last character typed. This allows a person to enter multiple characters in between and retrieve one set of result that is much more relevant. 
 
 I wanted to filter from just the search results but couldn’t find the fields to filter on. So I had to make new api calls to filter by topic and language. If I could have stored the result in local database then it would have been faster to run the filter.
 
-I have spent roughly 2 days to develop this, a large chunk of my time was spent in trouble shooting my first attempt. It took me a bit of time to write the  test codes as I haven’t had to do many in the past.
+I have spent roughly 2 days to develop this. It took me a bit of time to write the  test codes as I haven’t had the need to write them in the past.
 
 
 ## Testing

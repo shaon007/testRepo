@@ -1,6 +1,6 @@
 # Syft Git Search App
 
-![alt text](https://github.com/shaon007/Syftapp_kotlin_mvvm/blob/master/app/src/main/res/drawable/screenshot_syftapp.JPG)
+![alt text](https://github.com/shaon007/Syftapp_kotlin_mvvm/blob/master/app/src/main/res/drawable/screenshot_syft.png)
 
 The app generates search results in the form of a list as the user types in text into the search field.
 There is an additional filter function next to the search box, this opens a dialog with the options to filter results by topic and language categories.

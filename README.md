@@ -21,7 +21,8 @@ The results are sorted by the order of their star rating from high to low. The r
 * Unit test, mockito
 
 •	Kotlin - This is my second app in Kotlin. I am still in the process of learning as I want to cross over to Kotlin entirely for andorid development.
-o	This is test
+
+    o	This is test
 
 
 
